@@ -5,24 +5,34 @@ body {
 	font-family:'montserrat', arial;
 }
 
-.form {
-	padding-top: 30px;
-}
 h1 {
 	color: #3fa757;
 	font-weight: bold;
+	font-size: 50px;
+}
+
+footer {
+text-align: center;
+}
+
+.form {
+	padding-top: 30px;
+	font-size: 25px;
 }
 
 .well {
-	margin-top: 50px;
-	margin-left: 200px;
-	margin-right: 200px;
+	//margin-top: 50px;
+	//margin-left: 200px;
+	//margin-right: 200px;
+	-webkit-max-width: 800px;
+    -moz-max-width: 800px;
+    max-width: 800px;
+	margin: 50px auto;
 	padding-bottom: 40px; 
 	background-color:  white;
 	opacity: .80;
 	filter: alpha(opacity=80); /* For IE8 and earlier */
 	text-align: center;
-
 }
 
 .list-group-item {
@@ -33,4 +43,11 @@ h1 {
 .h1_word {
 	color: #ec4582;
 	text-decoration: underline;
+}
+
+.error {
+	font-size: 20px;
+	font-weight: bold;
+	color: red;
+	padding-top: 30px;
 }

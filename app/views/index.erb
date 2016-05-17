@@ -1,6 +1,14 @@
 <h1>ANAGRAM GENERATOR</h1>
 
-<caption>Enter a word.<em>Only 3 letter words!</em></caption>
+<br>
+<caption><h3>Enter a word.<em>Only 3 letter words!</em></h3></caption>
+
+<div class="row">
+	<% if @error.present? %>
+  		<p class="error"><%= "#{@error}" %></p>
+	<% end %>
+</div>
+
 <form action="/" method="post" class="form">
 	<div class="form-group">
 		<label for="word" class="input">Enter a word</label>
