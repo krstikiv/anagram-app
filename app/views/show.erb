@@ -1,4 +1,4 @@
-<h1>Anagrams for</h1> <h1 class="h1_word"><%= "#{@word}" %></h1>
+<h1>Anagrams for</h1> <h1 class="h1_word"><%= "#{@word.upcase}" %></h1>
 
 <!--Creates a loop and lists each word -->
 <% @anagrams.each do |word| %>

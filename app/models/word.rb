@@ -21,9 +21,11 @@ class Word < ActiveRecord::Base
       # Add new word to anagrams array
       anagrams << letter + reverse_letters(remaining).join('')
     end
-    combinations.each do |combo|
+
+    # Loop through anagram array to find words matching in dictionary. place words in new array.
+    anagrams.each do |combo|
     if Word.find_by_text(combo).present?
-      anagrams << combo
+      combinations << combo
     end
   end
     # Return anagrams array
