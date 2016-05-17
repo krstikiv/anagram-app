@@ -7,7 +7,7 @@ class Word < ActiveRecord::Base
  
     # Create an array to store our anagrams
     anagrams = []
- 
+    
     # Loop through each letter in letters
     letters.each do |letter|
       # Select the remaining letters
@@ -21,9 +21,13 @@ class Word < ActiveRecord::Base
       # Add new word to anagrams array
       anagrams << letter + reverse_letters(remaining).join('')
     end
- 
+    combinations.each do |combo|
+    if Word.find_by_text(combo).present?
+      anagrams << combo
+    end
+  end
     # Return anagrams array
-    anagrams
+    combinations
   end
  
   def self.reverse_letters(letters)
