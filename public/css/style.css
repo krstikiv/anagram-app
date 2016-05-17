@@ -1,0 +1,36 @@
+body {
+	background:#f8f8f8;
+	//background:url('/img/dark_embroidery.png');
+	background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/lined_paper.png");
+	font-family:'montserrat', arial;
+}
+
+.form {
+	padding-top: 30px;
+}
+h1 {
+	color: #3fa757;
+	font-weight: bold;
+}
+
+.well {
+	margin-top: 50px;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding-bottom: 40px; 
+	background-color:  white;
+	opacity: .80;
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+	text-align: center;
+
+}
+
+.list-group-item {
+	border-width: 0px;
+	font-size: 20px;
+}
+
+.h1_word {
+	color: #ec4582;
+	text-decoration: underline;
+}

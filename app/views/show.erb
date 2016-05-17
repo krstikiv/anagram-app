@@ -1,0 +1,11 @@
+<h1>Anagrams For:</h1> <h1 class="h1_word"><%= "#{@word}" %></h1>
+
+<!--Creates a loop and lists each word -->
+<% @anagrams.each do |word| %>
+	<li class="list-group-item"><%= "#{word}" %></li>
+<% end %>
+
+
+<!--Creates a loop but as array
+<%= @anagrams.each {|x| x } %>
+-->
