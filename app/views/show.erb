@@ -2,10 +2,11 @@
 <h1 class="h1_word"><%= "#{@word.upcase}" %></h1>
 
 <!--Creates a loop and lists each word -->
+<% if !@anagrams.nil? %>
 <% @anagrams.each do |word| %>
-	<li class="list-group-item"><%= "#{word}" %></li>
+	<li class="list-group-item"><%= "#{word.text}" %></li>
 <% end %>
-
+ <% end %>
 
 <!--Creates a loop but as array
 <%= @anagrams.each {|x| x } %>
