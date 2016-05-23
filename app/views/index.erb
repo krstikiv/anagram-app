@@ -1,7 +1,10 @@
 <h1>ANAGRAM GENERATOR</h1>
 
 <br>
-<caption><h3>Enter a word.<em>Only 3 letter words!</em></h3></caption>
+<blockquote>
+	<p>An anagram is a type of word play, the result of rearranging the letters of a word or phrase to produce a new word or phrase, using all the original letters exactly once; for example, the word anagram can be rearranged into nag-a-ram. Someone who creates anagrams may be called an "anagrammatist."</p>
+	<footer>Wikipedia</footer>
+</blockquote>
 
 <div class="row">
 	<% if @error.present? %>
@@ -16,3 +19,5 @@
 	</div>
 	<button type="submit" class="btn btn-success" value="submit">Show the Anagrams!</button>
 </form>
+
+<a href="/words/new"><h3>Add a new word</h3></a>
