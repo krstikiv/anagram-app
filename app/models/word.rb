@@ -6,7 +6,7 @@ class Word < ActiveRecord::Base
     
     def add_letters
         characters = self.text.chars
-          alphabetized_characters = characters.sort
+        alphabetized_characters = characters.sort
         self.letters = alphabetized_characters.join
   end
     
@@ -59,7 +59,7 @@ def self.valid_input?(input)
     if Word.find_by_text(input).present? 
         false
 else
-        raise Exception.new("Congrats! The word cannot be found. Add it now!")
+        raise Exception.new("The word cannot be found. Add it now!")
     end
 end
 

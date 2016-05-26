@@ -17,16 +17,7 @@ end
         @method
     end
 
-    def words_form_class(word)
-        if word.new_record?
-            @class = "new-word"
-        else
-            @class = "edit-word"
-        end
-        @class
-    end
-    
-    def words_form_id(word)
+def words_form_id(word)
         if word.new_record?
             @form_id = "new-word"
         else 

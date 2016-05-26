@@ -1,12 +1,20 @@
+<div class="row">
+<div class="col-xs-12">
 <h1>Anagrams for</h1>
 <h1 class="h1_word"><%= "#{@word.upcase}" %></h1>
+</div>
+</div>
 
+<div class="row">
+<div class="col-xs-12">
 <!--Creates a loop and lists each word -->
 <% if !@anagrams.nil? %>
 <% @anagrams.each do |word| %>
 	<li class="list-group-item"><%= "#{word.text}" %></li>
 <% end %>
  <% end %>
+ </div>
+ </div>
 
 <!--Creates a loop but as array
 <%= @anagrams.each {|x| x } %>

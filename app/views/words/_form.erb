@@ -6,19 +6,18 @@
 </div>
 <% end %>
 
-<form role="form" action="<%= words_form_action(@word) %>" id="<%= words_form_id(@word) %>" class="<%= words_form_class(@word) %>" method="post">
-    
-    
-    <input type="hidden" name="_method" value="<%= words_form_method(@word) %>" />
-    
-    <div class="form-group">
-        <label for="text" style="text align-center">Go ahead! Make a contribution!</label>
-        <div class="input-group margin-bottom-sm">
-            <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
-            <input type="text" name="text" class="form-control" placeholder="Enter a new word" value="<%= @word.text %>"/></div>
-        </div>
-        <div class="form-group row">
-            <div> <button type="submit" class="btn btn-success">Add Word</button>
-            </div>
-        </div>
-    </form>
+
+<div class="row">
+<div class="col-xs-12">
+<form action="<%= words_form_action(@word) %>"  id="<%= words_form_id(@word) %>" class="form" method="post">
+     <input type="hidden" name="_method" value="<%= words_form_method(@word) %>">
+
+     <div class="form-group">
+        <label for="word">Make a contribution:</label>
+        <input type="text" name="text" placeholder="Enter a new word" value="<%= @word.text %>">
+    </div>
+    <button type="submit" class="btn btn-success btn-lg" value="submit"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp; Add Word</button>
+</form>
+</div>
+</div>
+

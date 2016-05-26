@@ -1,24 +1,36 @@
+<div class="row">
+<div class="col-xs-12">
 <h1>ANAGRAM GENERATOR</h1>
-
 <br>
 <blockquote>
-	<p>An anagram is a type of word play, the result of rearranging the letters of a word or phrase to produce a new word or phrase, using all the original letters exactly once; for example, the word anagram can be rearranged into nag-a-ram. Someone who creates anagrams may be called an "anagrammatist."</p>
-	<footer>Wikipedia</footer>
+	<p><i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>An anagram is a type of word play, the result of rearranging the letters of a word or phrase to produce a new word or phrase, using all the original letters exactly once; for example, the word anagram can be rearranged into nag-a-ram. Someone who creates anagrams may be called an "anagrammatist."</p>
+<footer>Wikipedia</footer>
 </blockquote>
-
-<div class="row">
-	<% if @error.present? %>
-  		<p class="error"><%= "#{@error}" %></p>
-	<% end %>
+</div>
 </div>
 
+<div class="row">
+<% if @error.present? %>
+<p class="error"><%= "#{@error}" %></p>
+<% end %>
+</div>
+<div class="row">
+<div class="col-xs-12">
 <form action="/" method="post" class="form">
 	<div class="form-group">
 		<label for="word" class="input">Enter a word</label>
 		<input type="text" name="word">
 	</div>
-	<button type="submit" class="btn btn-success" value="submit">Show the Anagrams!</button>
+	<button type="submit" class="btn btn-success btn-lg" value="submit"><i class="fa fa-search" aria-hidden="true"></i>&nbsp; Show the Anagrams!</button>
 </form>
-
-<div class="group group-inline"><a href="/words/new"><h3>Add a new word</h3></a>
-<a href="/words/index"><h3>Word List</h3></a></div>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-xs-12 index_buttons">
+	<p>
+		<a class="btn btn-danger btn-lg" href="/words/new" role="button"><i class="fa fa-pencil"></i>&nbsp; Add a new word</a>
+		<a class="btn btn-warning btn-lg" href="/words" role="button"><i class="fa fa-list" aria-hidden="true"></i>&nbsp; View Word List</a>
+	</p>
+</div>
+</div>

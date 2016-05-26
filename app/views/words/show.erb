@@ -1,13 +1,24 @@
+<div class="row">
+<div class="col-xs-12">
 <h1>About The Word <%= " #{@word.text.upcase}" %></h1>
+
+<p>
+		<a class="btn btn-info btn-lg" href="/" role="button"><i class="fa fa-home" aria-hidden="true"></i>&nbsp; Home</a>
+		<a class="btn btn-danger btn-lg" href="/words/new" role="button"><i class="fa fa-pencil"></i>&nbsp; Add a new word</a>
+		<a class="btn btn-warning btn-lg" href="/words" role="button"><i class="fa fa-list" aria-hidden="true"></i>&nbsp; View Word List</a>
+	</p>
+
 <table class="table table-striped">
 	<thead>
-		<th style="text-align:center">Text</th>
-		<th style="text-align:center">Letters</th>
+		<th>Text</th>
+		<th>Letters</th>
 	</thead>
 	<tbody>
 		<tr>
-			<td style="text-align:center"><%= @word.text %></td>
-			<td style="text-align:center"><%= @word.letters %></td>
+			<td><%= @word.text %></td>
+			<td><%= @word.letters %></td>
 		</tr>
 	</tbody>
 </table>
+</div>
+</div>
